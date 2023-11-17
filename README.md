@@ -22,9 +22,9 @@ This problem can be represented with mathematical notation. The math is quite si
 To start, there are two guards total. We don't know which is the guard we're talking to, but we know that one of them always tells the truth and one of them always lies. We'll call whatever one tells the truth $$G_1$$ and the other one $$G_2$$. 
 
 $$
-|G| = 2
-\exists! G_1 \in G
-\exists! G_2 \in G
+{|G| = 2}
+{\exists! G_1 \in G}
+{\exists! G_2 \in G}
 $$
 
 
