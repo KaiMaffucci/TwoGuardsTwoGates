@@ -41,13 +41,13 @@ From here there are two ways to describe the solution. There's the more proposit
 
 $$ G_1 \Leftrightarrow \top$$
 
-$$ G_2 \Leftrightarrow \bottom$$
+$$ G_2 \Leftrightarrow \bot$$
 
 We do the same with the doors. 
 
 $$ D_1 \Leftrightarrow \top$$
 
-$$ D_2 \Leftrightarrow \bottom$$
+$$ D_2 \Leftrightarrow \bot$$
 
 In the prolog program it does step 2 before step 1, because it has to in order to compare it to something in step 1. 
 
