@@ -17,7 +17,7 @@ This means that no matter who you ask, the door to heaven will always be the opp
 
 ## The math behind it
 
-This problem can be represented with mathematical notation. The math is quite simple, as it's just basic set theory and logic. Signifigant credit to Mr. Cullinane, a friend of mine who helped me put the math together. 
+This problem can be represented with mathematical notation. The math is quite simple, as it's just basic set theory and logic. Signifigant credit to Mr. Cullinane, a friend of mine who helped me put the math together. Especially the fundementals of everything, and the algebraic explaination. 
 
 To start, there are two guards total. We don't know which is the guard we're talking to, but we know that one of them always tells the truth and one of them always lies. We'll call whatever one tells the truth $G_1$ and the other one $G_2$. We don't know what door is $G_1$ or $G_2$ though. 
 
