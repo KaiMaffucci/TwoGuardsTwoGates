@@ -1,8 +1,6 @@
 # TwoGuardsTwoGates
 A prolog project to demonstrate why the solution to the classic "two guards guard the gates to heaven and hell, only one tells the truth and one lies" dilemma works. 
 
-I will update the readme later, I am tired. 
-
 ## The puzzle
 
 The puzzle is as follows. You stand in front of two doors, with a guard in front of each door. You know that one of the guards tells the truth, and the other lies. You also know that one of the doors leads to heaven, and the other to hell (or life or death or whatever version of the puzzle you're looking at). You can only ask one of the guards a single question. That means only one question can be asked total, no matter who you ask it to: NOT one question each guard. What question do you ask to get to heaven? 
