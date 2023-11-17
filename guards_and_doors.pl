@@ -24,7 +24,9 @@ ds_chk :- d1_chk, d2_chk, dif(d1,d2).
 heaven :- g1, d1.
 hell :- \+ (\+ g2, \+ d2).
 
-% asking a guard what the other would say will result in them pointing you to hell no matter what. you can test this by seeing if each of these predicates is equal to false. this works because what one guard will say will always be the opposite of what the other would.
+% asking a guard what the other would say will result in them pointing you to hell no matter what.
+% you can test this by seeing if each of these predicates is equal to false.
+% this works because what one guard will say will always be the opposite of what the other would.
 g1_res :- g1, g2.
 g2_res :- g2, g1.
 % predicate to check all necessary predicates to determine if hell is always the option
