@@ -35,7 +35,7 @@ $$ \exists! D_1 \in D $$
 
 $$ \exists! D_2 \in D $$
 
-From here there are two ways to describe the solution. There's the more propositional logic way, and the more algebraic way. For the sake of the README I'll explain it in the more propositional way, since it's what our prolog program is modeled after, as it's what prolog was capable of. However, I like the algebra expression, especailly since it's a bit more elegant, so I'll put it in a seperate file in the repository.  
+From here there are two ways to describe the solution. There's the more propositional logic way, and the more algebraic way. For the sake of the README I'll explain it in the more propositional way, since it's what our prolog program is modeled after, as it's what prolog was capable of. However, I like the algebraic way, especially since it's a bit more elegant, so I'll put it in a seperate file in the repository.  
 
 2: To represent that one guard tells the truth and one lies, we assign true to the truthful one and false to the lying one. 
 
