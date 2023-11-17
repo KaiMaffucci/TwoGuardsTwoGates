@@ -22,13 +22,12 @@ ds_chk :- d1_chk, d2_chk, dif(d1,d2).
 
 % guard 1 will give heaven, guard 2 will give hell (because guard 2 being false is true)
 heaven :- g1, d1.
-% hell :- not(and(not(g2), not(d2))).
 hell :- \+ (\+ g2, \+ d2).
 
 % asking a guard what the other would say will result in them pointing you to hell no matter what. you can test this by seeing if each of these predicates is equal to false. this works because what one guard will say will always be the opposite of what the other would.
 g1_res :- g1, g2.
 g2_res :- g2, g1.
-% predicate to check all necessary predicates to determine if hell is always the option (\+ could work in place of not in this instance)
+% predicate to check all necessary predicates to determine if hell is always the option
 gs_resps_are_hell :- \+ g1_res, \+ g2_res, \+ hell.
 
 % if we want the correct door, then we must choose the opposite of the door that either of the guards would point to. 
