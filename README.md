@@ -15,9 +15,11 @@ If the guard you ask tells the truth, the other guard would lie and point to the
 
 If the guard you ask lies, the other guard would tell the truth about the door leading to heaven. So the guard you're talking to would then lie about what they would say, and point to the door to hell. 
 
+This means that no matter who you ask, the door to heaven will always be the opposite of which the guard you ask points to. 
+
 ## The math behind it
 
-This problem can be represented with mathematical notation. The math is quite simple, as it's just basic set theory and logic. 
+This problem can be represented with mathematical notation. The math is quite simple, as it's just basic set theory and logic. Signifigant credit to Mr. Cullinane, a friend of mine who helped me put the math together. 
 
 To start, there are two guards total. We don't know which is the guard we're talking to, but we know that one of them always tells the truth and one of them always lies. We'll call whatever one tells the truth $G_1$ and the other one $G_2$. We don't know what door is $G_1$ or $G_2$ though. 
 
@@ -35,7 +37,7 @@ $$ \exists! D_1 \in D $$
 
 $$ \exists! D_2 \in D $$
 
-From here there are two ways to describe the solution. There's the more propositional logic way, and the more algebraic way. For the sake of the README I'll explain it in the more propositional way, since it's what our prolog program is modeled after, as it's what prolog was capable of. However, I like the algebraic way, especially since it's a bit more elegant, so I'll put it in a seperate file in the repository.  
+From here there are two ways to describe the solution. There's the more propositional logic way, and the more algebraic way. For the sake of the README I'll explain it in the more propositional way, since it's what our prolog program is modeled after, as it's what prolog was capable of. However, I like the algebraic way too, so I'll put it in a seperate file in the repository.  
 
 2: To represent that one guard tells the truth and one lies, we assign true to the truthful one and false to the lying one. 
 
@@ -51,7 +53,20 @@ $$ D_2 \Leftrightarrow \bot$$
 
 In the prolog program it does step 2 before step 1, because it has to in order to compare it to something in step 1. 
 
+Carrying onwards, this gives us a few facts to work with. 
 
+$$ G_1 \Leftrightarrow D_1 $$
 
+$$ G_2 \Leftrightarrow D_2 $$
 
-<write more>
+We also know that asking the guard what door the other would say always leads to hell. You can think of the particular mathematical notation here saying "guard 1's truthfulness and guard 2's truthfulness (is always false, which) is the same as $D_2$." Vice-versa as well. In the code I effectively define these as "guard 1's response" and "guard 2's response." There's a bunch of other facts you could say as well, but it's not really necessary for the sake of the puzzle. Although I believe do in the prolog program, just to reinforce everything is valid. 
+
+$$ G_1 \land G_2 \Rightarrow D_2 $$
+
+$$ G_2 \land G_1 \Rightarrow D_2 $$
+
+Since we know that no matter who we ask will point to hell, we need to take the inverse of that to get the right door. 
+
+$$ \neg (G_1 \land G_2) \Rightarrow D_1 $$
+
+There you have it! This statement being true means you should take the opposite door of whatever guard you ask the solution question to points towards. 
